@@ -1,0 +1,275 @@
+/* declaring of colors inside the global scope */
+:root{
+  --cus-text-color:#616868;
+}
+
+/* styling the body */
+body {
+  margin: 50px;
+  font-size: medium;
+  background-color:aquamarine;
+}
+.flex, .table-flex{
+  background-color: #bedfea45;
+}
+.media{
+  background-color: #7fc3ff4a;
+}
+
+/* styling 0f the headers */
+header > h3 {
+  text-align: right;
+}
+h3 > a {
+  color: blue;
+}
+
+h2 {
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+/* ...... */
+main > p {
+  margin-top: -15px;
+  margin-bottom: 23px;
+  color: var(--cus-text-color)
+}
+
+
+/* grid */
+.grid {
+  display: inline-grid;
+  grid-template-columns: 300px 300px;
+  column-gap: 20px;
+  margin-bottom: 20px;
+}
+
+input,
+select {
+  background-color: #00000008;
+  border-width: 1px;
+  border-radius: 4px;
+  width: 300px;
+  height: 50px;
+  border: none;
+  margin-top: 5px;
+}
+
+/* changing the color on hovering */
+select:hover,
+input:hover {
+  border: solid 1.5px rgb(93, 126, 197);
+}
+/* making the select channel space wider */
+#channel {
+  width: 620px;
+  margin-bottom: 10px;
+}
+
+/* the submit button */
+.submit {
+  width: 620px;
+  color: white;
+  background-color: #0000ff91;
+}
+.submit:hover {
+  background-color: #2e2ea99e;
+}
+
+p > a {
+  color: blue;
+}
+
+#terms-of-use,
+div>p{
+    color: var(--cus-text-color);
+}
+
+/* the home button and the link to the table */
+#home-btn{
+    background-color: rgb(85, 190, 232);
+    border: none;
+    width: 100px;
+}
+div>button>a{
+    color: black;
+    font-weight: bold;
+}
+div>p>a{
+    text-decoration-thickness: 2px;
+    font-weight: bold;
+}
+
+/* end of styling the form page */
+
+
+
+/* styling the home page */
+
+.li-grid{
+  display: inline-grid;
+  grid-template-columns: 50px;
+  font-weight: bold;
+  color: grey; 
+}
+
+li>a{
+  text-decoration: none;
+  color:  blue;
+}
+
+#myself{
+  text-align: center;
+  text-decoration: underline 2px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+section>p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+aside>p{
+  font-style: italic;
+}
+
+aside>p>a{
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(162, 81, 239);
+}
+footer>button,
+footer>button>a{
+  border: none;
+  text-decoration: none;
+  
+}
+
+/* styling the table page */
+
+.table-h1{
+  text-align: center;
+  color: brown;
+  text-decoration: underline black 2px;
+}
+
+caption{
+  text-align: left;
+  font-style: oblique;
+  margin-bottom: 20px;
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th, td{
+  border: 2px solid black;
+}
+th,td{
+  padding: 10px;
+  text-align: center;
+}
+th{
+  background-color: #0f1b1b14;
+}
+td{
+  background-color: #6168680d;
+}
+
+.table-p,
+p>button{
+  margin-top: 20%;
+}
+
+footer>p>a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+
+/*  styling of the media page*/
+.sch-year{
+display: inline-grid; 
+grid-template-columns: 385px;
+border: solid 5px orangered;
+border-radius: 20px;
+}
+
+.sch-year-r{
+  display: inline-grid;
+  grid-template-columns: 600px;
+  border: solid 5px brown;
+  border-radius: 20px;
+}
+figcaption{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.none{
+  font-style: normal;
+}
+
+picture>figcaption{
+  text-align: left;
+}
+
+#my-years{
+  margin-top: 10%;
+}
+
+
+section>h2{
+  text-decoration: underline;
+  text-align: center;
+}
+
+aside>h3{
+text-decoration: underline;
+}
+
+#appre{
+  color: blue;
+  font-style: italic;
+  margin-top: 60px;
+}
+
+header>nav>button,
+header>nav>button>a{
+  border: none;
+  text-decoration: none;
+}
+
+#back-nav{
+  color: black;
+  font-size: x-large;
+  text-decoration: none;
+}
+
+
+/* trying the flex box wrapping some inside One */
+.table-fle,.flex{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* Media Queries */
+/* Phone Screen */
+@media (max-width:767px) {
+  .table-flex, .flex{
+    flex-direction: row;
+  }
+}
+
+/* Tablet Screen and Deskstop Screen*/
+@media (min-width:1023px) {
+  .table-flex, .flex{
+flex-direction: column;
+  }
+}
+
